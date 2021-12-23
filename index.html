@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+<head>
+    <meta charset="gbk" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="Tencent-TGideas" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="tgtest-ignore" content="foot">
+    <meta name="Description"
+          content=" " />
+    <meta name="Keywords"
+          content="  " />
+    <meta itemprop="name" content="" />
+    <meta itemprop="description" content="" />
+    <meta itemprop="image" content="" />
+    <title>火影忍者手游-官方网站-腾讯游戏</title>
+    <!-- 设计：CP | 制作：CP | 创建时间：2020-07-02 | 团队博客： -->
+    <link rel="stylesheet" href="ossweb-img/reset.css" />
+    <link rel="stylesheet" href="ossweb-img/index.css" />
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css" />
+    <script>
+        (function () {
+            if (
+                /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
+            ) {
+                var a = document.referrer,
+                    b = {
+                        "baidu.com": "seo_baidu",
+                        "sogou.com": "seo_sogou",
+                        "sm.cn": "seo_sm",
+                        "so.com": "seo_360",
+                        "bing.com": "seo_bing",
+                        "google.com": "seo_google"
+                    },
+                    c;
+                for (c in b) {
+                    if (-1 != a.indexOf(c)) {
+                        a = b[c];
+                        if (window.sessionStorage) {
+                            sessionStorage.setItem("channel", a);
+                        } else {
+                            var d = d || 0,
+                                b = "";
+                            0 != d &&
+                            ((b = new Date()),
+                                b.setTime(b.getTime() + 1000 * d),
+                                (b = "; expires=" + b.toGMTString()));
+                            document.cookie = "channel=" + escape(a) + b + "; path=/";
+                        }
+                        break;
+                    }
+                }
+                //location.search   换成移动端的地址(记得带上引号)
+                // window.location.href = '//hyrz.qq.com/m/m202003/'
+            }
+        })();
+    </script>
+</head>
+<body>
+
+</body>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+<script>
+    function showDia(id) {
+        showDialog.show({
+            id: id, //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+            bgcolor: "#000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+            opacity: 75 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+        });
+    }
+</script>
+<script>
+    //此段代码不能放到外链JS中，不要擅自增加或者删改对象属性
+    var setSite = {
+        //设置网站属性
+        siteType: "os", //必填项:官网填写"os"，活动专题填写活动目录名称如："a20160701xxx"，
+        pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "首页", //必填项:页面中文名
+        project: "base", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+        osact: "pc" //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    };
+    if (typeof pgvMain == "function") pgvMain(); //千万不能忘记！
+</script>
+
+</html>
